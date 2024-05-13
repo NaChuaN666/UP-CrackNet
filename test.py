@@ -2,7 +2,7 @@ import numpy as np
 import torch
 from torchvision import transforms
 from torch.autograd import Variable
-from dataset import DatasetFromFolder
+from dataset_test import DatasetFromFolder
 from model import Generator, Discriminator
 import utils
 import argparse
