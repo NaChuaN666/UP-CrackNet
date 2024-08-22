@@ -157,13 +157,13 @@ G_optimizer = torch.optim.Adam(G.parameters(), lr=params.lrG, betas=(params.beta
 D_optimizer = torch.optim.Adam(D.parameters(), lr=params.lrD, betas=(params.beta1, params.beta2))
 
 def adjust_learning_rate1(optimizer, epoch):
-    lr = 0.0001*(0.99**(epoch))
+    lr = 0.001*(0.99**(epoch))
     print("lr is {}".format(lr))
     for param_group in optimizer.param_groups:
         param_group['lr'] = lr
 
 def adjust_learning_rate2(optimizer, epoch):
-    lr = 0.0004*(0.99**(epoch))
+    lr = 0.004*(0.99**(epoch))
     print("lr is {}".format(lr))
     for param_group in optimizer.param_groups:
         param_group['lr'] = lr
