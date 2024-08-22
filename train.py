@@ -108,7 +108,7 @@ def ssim(img1, img2, window_size = 11, size_average = True):
     return _ssim(img1, img2, window, window_size, channel, size_average)
 
 
-data_dir = './dataset/crack500_train/'
+data_dir = './dataset/crack500_train_github/'
 model_dir = './saved-model/'
 
 if not os.path.exists(model_dir):
