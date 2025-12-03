@@ -78,17 +78,9 @@ def calculate2_metrics(pred_folder, gt_folder):
     logger.info('acc: %f | recall: %f | precision: %f | f1_score: %f | IOU: %f | AIU: %f|',curr_acc, curr_recall, curr_precision, curr_f1_score, curr_iou, curr_aiu)   
 
 def main():
-    # pred_folder = 'G:\\Survey4Crack\\Collection\\CrackHQ\\Transformer-based\\TransUnet'
-    # gt_folder = 'G:\\Survey4Crack\\Collection\\CrackHQ\\label'
-
-    # pred_folder = '/root/autodl-tmp/ACR_used_boundary/WPCRACK/experiments_deepcrack/0506_crack500_bs4_model3_grid_collo_6_newval_SEPath/version_8/out_ck142_test_BI'
-    # pred_folder = '/root/autodl-tmp/ACR_used_boundary/WPCRACK/experiments_crack500/0513_crack500_SEPath_2/version_0/out_ck22'
-    # pred_folder = '/root/autodl-tmp/ACR_used_boundary/WPCRACK/experiments_deepcrack/0723_crack500_SEPath_wk4_adapter_8/version_6/out_0_BI'
-    # pred_folder = '/root/autodl-tmp/ACR_used_boundary/WPCRACK/experiments_deepcrack/0724_crack500_SEPath_wk4_adapter_9_dilate/version_0/out_80'
-    # pred_folder = '/root/autodl-tmp/ACR_used_boundary/WPCRACK/experiments_deepcrack/0724_crack500_SEPath_wk4_adapter_8_finetune/version_0/out_2_BI'
-    # pred_folder = '/root/autodl-tmp/ACR_used_boundary/WPCRACK/experiments_deepcrack/0724_crack500_SEPath_wk4_adapter_8_finetune/version_13/out_1_BI'
-    pred_folder = '/root/autodl-tmp/UP-CrackNet-main/outputs_all/200'
-    # gt_folder = '/root/autodl-tmp/ACR_used_boundary/WPCRACK/data/Crack500/all_labels'
+    
+    pred_folder = '/root/autodl-tmp/UP-CrackNet-main/outputs_all/best'
+    
     gt_folder = '/root/autodl-tmp/UP-CrackNet-main/dataset/crack500_test/test_folder_all/label'
 
     metrics = calculate2_metrics(pred_folder, gt_folder)
